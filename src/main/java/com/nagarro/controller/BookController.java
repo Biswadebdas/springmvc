@@ -26,7 +26,7 @@ public class BookController {
         return "index";
     }
     
-    @GetMapping("/adds")
+    @GetMapping("/add")
     public String addBookForm(Model model) {
         model.addAttribute("book", new Book());
         return "add";
